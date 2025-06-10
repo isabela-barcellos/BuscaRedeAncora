@@ -2,6 +2,7 @@
 
 import type React from "react"
 
+import Image from "next/image";
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Lock, User, LogIn } from "lucide-react"
@@ -42,7 +43,7 @@ export default function LoginPage() {
       <div className="bg-gradient-to-r from-[#012d48] to-[#012039] text-white px-4 py-6 rounded-b-3xl shadow-xl">
         <div className="flex items-center justify-center mb-4">
           <div className="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center border border-white/20 p-2">
-            <img src="/logo-ancora.png" alt="Rede ANCORA" className="w-full h-full object-contain" />
+            <Image img src="/logo-ancora.png" alt="Rede ANCORA" className="w-full h-full object-contain" />
           </div>
         </div>
         <h1 className="text-xl font-bold text-center mb-1">Catálogo Rede ANCORA</h1>

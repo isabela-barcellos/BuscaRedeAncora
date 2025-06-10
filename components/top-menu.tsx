@@ -1,5 +1,6 @@
 "use client"
 
+import Image from 'next/image';
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Menu, X, User, LogOut, Search, Settings, PenToolIcon as Tool, Bell } from "lucide-react"
@@ -23,7 +24,7 @@ export function TopMenu() {
         <div className="max-w-md mx-auto flex items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center p-1">
-              <img src="/logo-ancora.png" alt="Rede ANCORA" className="w-full h-full object-contain" />
+              <Image img src="/logo-ancora.png" alt="Rede ANCORA" className="w-full h-full object-contain" />
             </div>
             <span className="font-semibold text-sm">Rede ANCORA</span>
           </div>
@@ -57,7 +58,7 @@ export function TopMenu() {
             <div className="p-4 bg-gradient-to-r from-[#012d48] to-[#012039] text-white">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
-                  <img src="/logo-ancora.png" alt="Rede ANCORA" className="w-6 h-6 object-contain" />
+                  <Image img src="/logo-ancora.png" alt="Rede ANCORA" className="w-6 h-6 object-contain" />
                   <h2 className="font-semibold">Menu</h2>
                 </div>
                 <Button
